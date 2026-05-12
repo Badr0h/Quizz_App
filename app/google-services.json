@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "144250518635",
+    "project_id": "quizappoussaih",
+    "storage_bucket": "quizappoussaih.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144250518635:android:82cb46893019401787852e",
+        "android_client_info": {
+          "package_name": "com.example.quizzapp_badreddineoussaih"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJvSTc6cpqBq-p2KmIRrKUyCs0N872Yvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

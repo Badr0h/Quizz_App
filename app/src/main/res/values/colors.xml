@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Colors -->
+    <color name="black">#0B0E14</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_bg">#0B0E14</color>
+    <color name="card_bg">#1A1D26</color>
+
+    <!-- Gaming Accents (Neon/RGB) -->
+    <color name="neon_blue">#00F2FF</color>
+    <color name="neon_purple">#BC13FE</color>
+    <color name="neon_pink">#FF00E5</color>
+    <color name="neon_green">#39FF14</color>
+
+    <!-- UI Elements -->
+    <color name="text_primary">#E0E0E0</color>
+    <color name="text_secondary">#9E9E9E</color>
+    <color name="divider">#2C2F3A</color>
+
+    <!-- Status -->
+    <color name="error">#FF4B4B</color>
+    <color name="success">#39FF14</color>
+</resources>
