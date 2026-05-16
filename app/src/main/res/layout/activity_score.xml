@@ -126,7 +126,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="40dp">
+                android:layout_marginTop="32dp">
+
+                <Button
+                    android:id="@+id/bViewLocationScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/gaming_button_bg"
+                    android:text="VIEW MY LOCATION"
+                    android:textColor="@color/neon_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null"
+                    android:layout_marginBottom="16dp" />
 
                 <Button
                     android:id="@+id/bTry"

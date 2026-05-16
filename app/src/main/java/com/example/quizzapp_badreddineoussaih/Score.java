@@ -22,7 +22,7 @@ import java.util.Locale;
 import java.util.Map;
 
 public class Score extends AppCompatActivity {
-    private Button bLogout, bTry;
+    private Button bLogout, bTry, bViewLocation;
     private ProgressBar progressBar;
     private TextView tvScore, tvScoreDetails, tvLocation;
     private LinearLayout scoreContent;
@@ -42,6 +42,7 @@ public class Score extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         bLogout = findViewById(R.id.bLogout);
         bTry = findViewById(R.id.bTry);
+        bViewLocation = findViewById(R.id.bViewLocationScore);
         scoreContent = findViewById(R.id.scoreContent);
 
         // Animations
@@ -50,6 +51,7 @@ public class Score extends AppCompatActivity {
 
         Animation glow = AnimationUtils.loadAnimation(this, R.anim.button_glow);
         bTry.startAnimation(glow);
+        bViewLocation.startAnimation(glow);
 
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
@@ -72,6 +74,13 @@ public class Score extends AppCompatActivity {
         }
 
         saveResultToFirebase();
+
+        bViewLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Score.this, MapActivity.class));
+            }
+        });
 
         bLogout.setOnClickListener(new View.OnClickListener() {
             @Override
