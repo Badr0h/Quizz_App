@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvMessageAi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/gaming_button_bg"
+        android:backgroundTint="@color/card_bg"
+        android:padding="12dp"
+        android:text="AI message here"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -95,6 +95,18 @@
             android:textStyle="bold"
             app:backgroundTint="@null" />
 
+        <Button
+            android:id="@+id/bAIChat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/gaming_button_bg"
+            android:text="AI MISSION CHAT 🤖"
+            android:textColor="@color/neon_purple"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
         <TextView
             android:id="@+id/tvRegister"
             android:layout_width="wrap_content"

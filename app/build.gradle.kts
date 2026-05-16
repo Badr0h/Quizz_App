@@ -46,4 +46,6 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.android.gms:play-services-location:21.3.0")
     implementation(libs.play.services.maps)
+    implementation(libs.okhttp)
+    implementation(libs.gson)
 }

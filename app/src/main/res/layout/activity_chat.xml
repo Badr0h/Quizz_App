@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg"
+    tools:context=".ChatActivity">
+
+    <View
+        android:id="@+id/vHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/card_bg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintBottom_toBottomOf="@id/vHeader"
+        app:layout_constraintStart_toStartOf="@id/vHeader"
+        app:layout_constraintTop_toTopOf="@id/vHeader"
+        app:tint="@color/neon_blue" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI MISSION ASSISTANT"
+        android:textColor="@color/neon_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        app:layout_constraintBottom_toBottomOf="@id/vHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vHeader" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/llInput"
+        app:layout_constraintTop_toBottomOf="@id/vHeader" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminateTint="@color/neon_purple"
+        app:layout_constraintBottom_toTopOf="@+id/llInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vHeader" />
+
+    <LinearLayout
+        android:id="@+id/llInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/card_bg"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/gaming_button_bg"
+            android:hint="Type mission query..."
+            android:textColorHint="@color/text_secondary"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:maxLines="4" />
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/gaming_button_bg"
+            android:backgroundTint="@color/neon_blue"
+            android:src="@android:drawable/ic_menu_send"
+            app:tint="@color/black" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
