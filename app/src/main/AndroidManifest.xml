@@ -8,6 +8,8 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
+    <uses-feature android:name="android.hardware.camera.any" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -21,7 +23,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBJvSTc6cpqBq-p2KmIRrKUyCs0N872Yvk" />
+            android:value="AIzaSyBil_1xCFENvVZxnqzvvqWQdcb1YlLu38w" />
 
         <activity
             android:name=".MainActivity"
@@ -36,6 +38,7 @@
         <activity android:name=".Score" />
         <activity android:name=".MapActivity" />
         <activity android:name=".ChatActivity" />
+        <activity android:name=".CameraActivity" />
     </application>
 
 </manifest>

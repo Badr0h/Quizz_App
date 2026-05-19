@@ -48,4 +48,10 @@ dependencies {
     implementation(libs.play.services.maps)
     implementation(libs.okhttp)
     implementation(libs.gson)
+
+    // CameraX
+    implementation(libs.camera.core)
+    implementation(libs.camera.camera2)
+    implementation(libs.camera.lifecycle)
+    implementation(libs.camera.view)
 }

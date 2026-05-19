@@ -15,109 +15,124 @@
         android:src="@drawable/gaming_bg"
         android:alpha="0.4" />
 
-    <LinearLayout
-        android:id="@+id/mainContent"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/ivLogo"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:src="@drawable/quiz_banner"
-            android:layout_marginBottom="24dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GAMER LOGIN"
-            android:textColor="@color/neon_blue"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:letterSpacing="0.2"
-            android:layout_marginBottom="32dp" />
+            android:orientation="vertical"
+            android:padding="32dp">
 
-        <EditText
-            android:id="@+id/etMail"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="@drawable/gaming_button_bg"
-            android:hint="Player Email"
-            android:textColorHint="@color/text_secondary"
-            android:textColor="@color/white"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:drawableStart="@drawable/baseline_mail_28"
-            android:drawablePadding="12dp"
-            android:layout_marginBottom="16dp" />
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/quiz_banner"
+                android:layout_marginBottom="24dp" />
 
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="@drawable/gaming_button_bg"
-            android:hint="Access Code"
-            android:textColorHint="@color/text_secondary"
-            android:textColor="@color/white"
-            android:inputType="textPassword"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:drawableStart="@drawable/baseline_lock_28"
-            android:drawablePadding="12dp"
-            android:layout_marginBottom="32dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GAMER HUB"
+                android:textColor="@color/neon_blue"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="32dp" />
 
-        <Button
-            android:id="@+id/bLogin"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/gaming_button_bg"
-            android:text="ENTER ARENA"
-            android:textColor="@color/neon_blue"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:backgroundTint="@null" />
+            <EditText
+                android:id="@+id/etMail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/gaming_button_bg"
+                android:hint="Player Email"
+                android:textColorHint="@color/text_secondary"
+                android:textColor="@color/white"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:drawableStart="@drawable/baseline_mail_28"
+                android:drawablePadding="12dp"
+                android:layout_marginBottom="16dp" />
 
-        <Button
-            android:id="@+id/bViewLocation"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/gaming_button_bg"
-            android:text="VIEW MY LOCATION"
-            android:textColor="@color/neon_green"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:backgroundTint="@null" />
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/gaming_button_bg"
+                android:hint="Access Code"
+                android:textColorHint="@color/text_secondary"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:drawableStart="@drawable/baseline_lock_28"
+                android:drawablePadding="12dp"
+                android:layout_marginBottom="32dp" />
 
-        <Button
-            android:id="@+id/bAIChat"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/gaming_button_bg"
-            android:text="AI MISSION CHAT 🤖"
-            android:textColor="@color/neon_purple"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:backgroundTint="@null" />
+            <Button
+                android:id="@+id/bLogin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/gaming_button_bg"
+                android:text="ENTER ARENA"
+                android:textColor="@color/neon_blue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
 
-        <TextView
-            android:id="@+id/tvRegister"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CREATE NEW PROFILE"
-            android:textColor="@color/neon_purple"
-            android:layout_gravity="center"
-            android:layout_marginTop="24dp"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/bViewLocation"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/gaming_button_bg"
+                android:text="VIEW RADAR (MAPS)"
+                android:textColor="@color/neon_green"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/bAIChat"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/gaming_button_bg"
+                android:text="AI MISSION CHAT"
+                android:textColor="@color/neon_purple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/bCamera"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/gaming_button_bg"
+                android:text="SCAN ENVIRONMENT (CAMERA)"
+                android:textColor="@color/neon_blue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREATE NEW PROFILE"
+                android:textColor="@color/neon_purple"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

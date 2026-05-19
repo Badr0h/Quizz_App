@@ -37,7 +37,7 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private EditText etLogin, etPassword;
-    private Button bLogin, bViewLocation, bAIChat;
+    private Button bLogin, bViewLocation, bAIChat, bCamera;
     private TextView tvRegister;
     private FirebaseAuth mAuth;
     private LinearLayout mainContent;
@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         bLogin = findViewById(R.id.bLogin);
         bViewLocation = findViewById(R.id.bViewLocation);
         bAIChat = findViewById(R.id.bAIChat);
+        bCamera = findViewById(R.id.bCamera);
         tvRegister = findViewById(R.id.tvRegister);
         mainContent = findViewById(R.id.mainContent);
 
@@ -84,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         bLogin.startAnimation(glow);
         bViewLocation.startAnimation(glow);
         bAIChat.startAnimation(glow);
+        bCamera.startAnimation(glow);
 
         checkAndRequestPermissions();
 
@@ -119,6 +121,10 @@ public class MainActivity extends AppCompatActivity {
 
         bAIChat.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, ChatActivity.class));
+        });
+
+        bCamera.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, CameraActivity.class));
         });
 
         tvRegister.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, Register.class)));
