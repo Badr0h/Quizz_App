@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     id("com.google.gms.google-services")
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {
@@ -30,6 +31,12 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+}
+
+secrets {
+    // Specify the file name containing your secrets.
+    propertiesFileName = "secrets.properties"
+    // By default, keys are available in the Manifest as ${KEY_NAME}
 }
 
 dependencies {
